@@ -10,7 +10,7 @@ class Button extends Component {
         return true;
     }
     render() {
-        console.log("button components rendered");
+
         const { change, locale, show } = this.props;
         return (
             <div>
