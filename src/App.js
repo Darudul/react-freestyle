@@ -1,13 +1,13 @@
 import './App.css';
-import React from 'react'
-import ClassCounter from './components/ClassCounter';
-import HookCounter from './components/HookCounter';
+import React from 'react';
+import Form from './components/Form';
+
 
 const App = () => {
   return (
-    <div>
-      {/* <ClassCounter /> */}
-      <HookCounter />
+    <div className='App'>
+      <Form />
+
     </div>
   )
 }
