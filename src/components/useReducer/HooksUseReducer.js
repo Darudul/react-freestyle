@@ -25,9 +25,15 @@ const reducer = (state, action) => {
         }
     }
     if (action.type === "REMOVE") {
+        const filteredBooks = [...state.books].filter(book => book.id !== action.payload)
+        return {
+            ...state,
+            books: filteredBooks,
+            isModalOpen: true,
+            modalText: "Book has been removed"
 
+        }
     }
-    return state;
 
 }
 
@@ -51,7 +57,7 @@ const HooksUseReducer = () => {
         setBookName("")
     };
     const removeBook = (id) => {
-        dispatch({ type: "REMOVE" })
+        dispatch({ type: "REMOVE", payload: id })
     }
     return (
         <div>
