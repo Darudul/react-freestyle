@@ -1,12 +1,14 @@
 import './App.css';
 import React from 'react';
-import Form from './components/Form';
+import HooksUseReducer from './components/useReducer/HooksUseReducer';
+
+
 
 
 const App = () => {
   return (
     <div className='App'>
-      <Form />
+      <HooksUseReducer />
 
     </div>
   )
